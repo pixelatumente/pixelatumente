@@ -1,0 +1,23 @@
+---
+const navItems = [
+  { label: 'Proyectos', href: '#proyectos' },
+  { label: 'NutriCare', href: 'https://nutricaresenior.es/' },
+  { label: 'Contacto', href: 'mailto:contacto@pixelatumente.es' },
+];
+
+const location = 'Barcelona / online';
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Pixelatumente</strong>
+    </div>
+    <nav class="footer-nav">
+      {navItems.map(function(item) {
+        return <a href={item.href}>{item.label}</a>;
+      })}
+    </nav>
+    <div class="footer-location">{location}</div>
+  </div>
+</footer>

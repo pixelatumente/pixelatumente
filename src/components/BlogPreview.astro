@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const recentPosts = posts
+  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date))
+  .slice(0, 4);
+---
+
+<div class="blog-preview-section">
+  <div class="container">
+    <div class="blog-grid">
+      {recentPosts.map(function(post) {
+        return (
+          <article class="blog-card">
+            <h3><a href={`/blog/${post.id.replace(/\.md$/, '')}/`}>{post.data.title}</a></h3>
+            <p class="blog-meta">{post.data.date}</p>
+            <p class="blog-excerpt">{post.data.description}</p>
+            <a href={`/blog/${post.id.replace(/\.md$/, '')}/`} class="read-more">Leer →</a>
+          </article>
+        );
+      })}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+---
+const pathname = Astro.url.pathname;
+
+const navItems = [
+  { label: 'Blog', href: '/blog/' },
+  { label: 'Proyectos', href: '/#proyectos' },
+  { label: 'Contacto', href: 'mailto:contacto@pixelatumente.es' },
+];
+
+function isActive(item) {
+  if (item.href.startsWith('/blog')) return pathname.startsWith('/blog');
+  return false;
+}
+---
+
+<header class="site-header">
+  <a href="/" class="header-logo-link" aria-label="Pixelatumente — inicio">
+    <img src="/logo-256.png" alt="" width="44" height="44" class="header-logo-img" />
+    <span class="header-logo">Pixelatumente</span>
+  </a>
+
+  <nav class="header-nav" aria-label="Principal">
+    {navItems.map(function(item) {
+      return (
+        <a
+          href={item.href}
+          class:list={['header-nav-link', isActive(item) && 'is-active']}
+        >
+          {item.label}
+        </a>
+      );
+    })}
+  </nav>
+
+  <div class="header-actions">
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <span class="menu-icon">☰</span>
+    </button>
+  </div>
+</header>
+
+<nav id="mobile-nav" class="mobile-nav" aria-label="Principal móvil" hidden>
+  {navItems.map(function(item) {
+    return (
+      <a
+        href={item.href}
+        class:list={['mobile-nav-link', isActive(item) && 'is-active']}
+      >
+        {item.label}
+      </a>
+    );
+  })}
+</nav>

@@ -1,0 +1,224 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPreview from '../components/BlogPreview.astro';
+
+const title = 'Pixelatumente | Aprendo, pruebo y publico';
+const description = 'Soy Pixelatumente. Soy autodidacta y llevo tiempo mezclando SEO, copy, diseño, automatización, IA y desarrollo práctico para convertir ideas en herramientas reales.';
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Hero -->
+  <section class="section hero-section" id="hero">
+    <div class="container">
+      <h1 class="hero-title">No vengo de una escuela de programación.<br>Vengo de aprender haciendo.</h1>
+      <p class="hero-text">Soy Pixelatumente. Soy autodidacta y llevo tiempo mezclando SEO, copy, diseño, automatización, IA y desarrollo práctico para convertir ideas en herramientas reales. Esta web es mi base: un lugar donde enseño lo que construyo, lo que pruebo y lo que voy entendiendo por el camino.</p>
+      <div class="button-group">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="https://nutricaresenior.es/" target="_blank" rel="noopener" class="btn btn-secondary">Abrir NutriCare ↗</a>
+      </div>
+      <div class="microcopy">
+        No estoy montando una startup de cartón. Estoy construyendo, iterando y publicando cosas en abierto.
+      </div>
+    </div>
+  </section>
+
+  <!-- Quién soy -->
+  <section class="section">
+    <div class="container grid-2-col">
+      <div class="section-header">
+        <h2>Aprendo, pruebo y publico.</h2>
+      </div>
+      <div class="section-content">
+        <p>No me interesa parecer más grande de lo que soy. Me interesa hacer cosas útiles, aprender rápido y mejorar con cada proyecto. Trabajo de forma híbrida: pienso en contenido, estructura, SEO, experiencia, automatización y ejecución técnica como partes de un mismo sistema.</p>
+        <p>No separo demasiado "lo creativo" de "lo técnico". Si una idea merece existir, intento llevarla a una versión usable y ponerla online lo antes posible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qué hago -->
+  <section class="section">
+    <div class="container grid-2-col">
+      <div class="section-header">
+        <h2>Lo que hago suele vivir entre estas zonas.</h2>
+      </div>
+      <div class="section-content">
+        <ul class="brutalist-list">
+          <li>Apps web y herramientas pequeñas.</li>
+          <li>Automatizaciones para tareas repetitivas.</li>
+          <li>Landings y estructuras web con intención.</li>
+          <li>Experimentos con IA aplicada.</li>
+          <li>Ideas que mezclan utilidad, interfaz y distribución.</li>
+        </ul>
+        <p class="mt-base">A veces nace como una necesidad real. A veces como una obsesión puntual. Y otras veces como una prueba para entender mejor un problema. Lo importante es que no se quede solo en nota o en prompt: intento publicarlo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyecto Destacado -->
+  <section class="section featured-project" id="nutricare">
+    <div class="container">
+      <div class="featured-header">
+        <h2>Un proyecto activo: NutriCare</h2>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-info">
+          <p class="large-text">NutriCare es una de las apps que tengo activas ahora mismo. La uso como ejemplo de algo que ya ha pasado de idea a producto visible: una interfaz publicada, navegable y real, no solo un concepto bonito en una captura.</p>
+          <p class="project-note">Me interesa porque resume bastante bien cómo trabajo: detectar una necesidad, darle forma, simplificar la experiencia y llevarla a una versión funcional que ya se puede abrir y usar.</p>
+        </div>
+        <div class="project-card">
+          <div class="card-meta">
+            <span class="tag">Proyecto: NutriCare</span>
+            <span class="tag tag-active">Estado: Activo</span>
+            <span class="tag">Tipo: App web publicada</span>
+          </div>
+          <div class="card-action">
+            <a href="https://nutricaresenior.es/" target="_blank" rel="noopener" class="btn btn-primary btn-block">Abrir NutriCare ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Archivo de proyectos -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <h2 class="mb-base">No todo está terminado. Pero todo esto forma parte del proceso.</h2>
+      <p class="max-w-prose mb-large">Aquí irán conviviendo proyectos activos, pruebas, herramientas, borradores con potencial y piezas que me ayudan a pensar mejor lo que hago. No quiero que esta web sea un portfolio congelado, sino un archivo vivo.</p>
+
+      <div class="archive-grid">
+        <article class="archive-card">
+          <h3><a href="https://nutricaresenior.es/" target="_blank" rel="noopener">NutriCare ↗</a></h3>
+          <p>Herramienta funcional para generar planes nutricionales y listas de la compra.</p>
+        </article>
+        <article class="archive-card">
+          <h3><a href="https://endiza.com/" target="_blank" rel="noopener">Endiza ↗</a></h3>
+          <p>Motor de análisis GEO SEO para detectar oportunidades en negocios locales.</p>
+        </article>
+        <article class="archive-card">
+          <h3><a href="https://el-oraculo-meteorologico.pages.dev/" target="_blank" rel="noopener">El Oráculo Meteorológico ↗</a></h3>
+          <p>Aplicación web experimental para consultar la previsión del clima.</p>
+        </article>
+        <article class="archive-card">
+          <h3><a href="https://palabra-y-actualidad.pages.dev/" target="_blank" rel="noopener">Palabra y Actualidad ↗</a></h3>
+          <p>Aplicación web para conectar la actualidad con textos y reflexiones bíblicas.</p>
+        </article>
+        <article class="archive-card">
+          <h3><a href="https://comparador-super.pages.dev/" target="_blank" rel="noopener">Mi Cesta ↗</a></h3>
+          <p>Precios reales de hoy de tu cesta en Mercadona, Alcampo, Día y Carrefour.</p>
+        </article>
+        <article class="archive-card">
+          <h3><a href="https://resenasiq.pages.dev/" target="_blank" rel="noopener">ReseñasIQ ↗</a></h3>
+          <p>Análisis de reseñas de Google Maps con IA para convertirlas en un plan de acción de 30 días.</p>
+        </article>
+        <article class="archive-card">
+          <h3>Experimentos con IA</h3>
+          <p>Pruebas para convertir tareas complejas en flujos más simples.</p>
+        </article>
+        <article class="archive-card">
+          <h3>Herramientas SEO y contenido</h3>
+          <p>Ideas y utilidades relacionadas con investigación, estructura y automatización.</p>
+        </article>
+        <article class="archive-card">
+          <h3>Microapps internas</h3>
+          <p>Pequeñas piezas que nacen para resolver algo concreto.</p>
+        </article>
+      </div>
+
+      <div class="note-box mt-large">
+        <strong>Nota de tono:</strong> Algunas cosas estarán más pulidas. Otras serán más crudas. Prefiero enseñar evolución real antes que fingir perfección.
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog section — nuevo -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Lo que escribo.</h2>
+      </div>
+      <div class="section-content">
+        <p>Artículos, guías y notas sobre SEO, copy, herramientas y lo que voy descubriendo. Publico sin filtro de vitrina: lo que funciona y lo que estoy probando.</p>
+      </div>
+      <div class="blog-cta mt-base">
+        <a href="/blog/" class="btn btn-primary">Ver todo el blog →</a>
+      </div>
+    </div>
+    <BlogPreview />
+  </section>
+
+  <!-- Cómo construyo -->
+  <section class="section">
+    <div class="container grid-2-col">
+      <div class="section-header">
+        <h2>Mi forma de trabajar es bastante simple.</h2>
+      </div>
+      <div class="section-content">
+        <ol class="brutalist-steps">
+          <li>Detecto una fricción o una idea con recorrido.</li>
+          <li>La bajo a algo pequeño y entendible.</li>
+          <li>La convierto en interfaz o herramienta.</li>
+          <li>La publico.</li>
+          <li>La reviso con más criterio que nostalgia.</li>
+        </ol>
+        <p class="mt-base">No siempre busco "el gran producto". Muchas veces busco aprender algo útil, validar un enfoque o crear una pieza que me acerque a la siguiente mejor idea.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qué me interesa -->
+  <section class="section">
+    <div class="container grid-2-col">
+      <div class="section-header">
+        <h2>Ahora mismo estoy explorando esto.</h2>
+      </div>
+      <div class="section-content">
+        <ul class="brutalist-list">
+          <li>IA aplicada a trabajo real.</li>
+          <li>Automatización de tareas repetitivas.</li>
+          <li>pSEO y sistemas de contenido.</li>
+          <li>Interfaces útiles y ligeras.</li>
+          <li>Herramientas web que nacen rápido pero no se sienten improvisadas.</li>
+        </ul>
+        <p class="mt-base">Me interesa mucho más una herramienta pequeña que funciona que una idea enorme que no aterriza nunca. Supongo que esta web también va de eso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details class="faq-item" open>
+        <summary>¿Eres desarrollador?</summary>
+        <div class="faq-content">
+          <p>No me definiría así, al menos no de forma clásica. Soy autodidacta y construyo usando criterio, práctica, herramientas y muchas iteraciones.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Esto es una marca personal, un portfolio o un laboratorio?</summary>
+        <div class="faq-content">
+          <p>Un poco las tres cosas. Me sirve para mostrar lo que hago, ordenar lo que aprendo y reunir en un mismo sitio los proyectos que voy publicando.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Todas las herramientas están terminadas?</summary>
+        <div class="faq-content">
+          <p>No. Algunas están activas, otras evolucionan y otras son pruebas con potencial. Prefiero mostrar proceso real antes que una vitrina demasiado perfecta.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="section cta-section">
+    <div class="container">
+      <h2>Si quieres entenderme rápido, no leas solo lo que digo. Mira lo que voy publicando.</h2>
+      <p>Esta web es mi punto de partida. Desde aquí iré enlazando proyectos, ideas, herramientas y todo lo que merezca quedarse visible en vez de perderse en una carpeta.</p>
+      <div class="button-group">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="https://nutricaresenior.es/" target="_blank" rel="noopener" class="btn btn-secondary">Abrir NutriCare ↗</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,23 @@
+# dependencias
+node_modules/
+
+# build
+dist/
+.astro/
+
+# entorno (nunca subir secretos)
+.env
+.env.*
+!.env.example
+
+# logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# sistema
+.DS_Store
+.wrangler/
+
+# artefactos del agente
+.agent/
