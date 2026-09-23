@@ -147,6 +147,37 @@ a:hover {
 .mt-large { margin-top: 2rem; }
 .max-w-prose { max-width: 65ch; }
 
+/* ===== Hero con imagen (2 columnas) ===== */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.25rem, 4vw, 3.75rem);
+}
+
+.hero-figure {
+  margin: 0;
+  border: var(--border-thickness) solid var(--color-border);
+  background-color: var(--color-superficie);
+}
+
+.hero-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+  }
+}
+
 /* ===== Header ===== */
 .site-header {
   display: flex;
