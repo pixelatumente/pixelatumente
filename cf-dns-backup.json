@@ -1,0 +1,159 @@
+{
+ "zone_id": "ce99b8cd075ff2da1ef99637260e0a7c",
+ "token": "CLOUDFLARE_PIXELATUMENTE_API_TOKEN",
+ "records": [
+  {
+   "id": "aad7b93ecd9e8ac74e7cb30bdd5b3ae2",
+   "name": "autoconfig.pixelatumente.es",
+   "type": "CNAME",
+   "content": "tb-es.securemail.pro",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {
+    "flatten_cname": false
+   },
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-04-29T14:02:52.109472Z",
+   "modified_on": "2026-04-29T14:02:52.109472Z"
+  },
+  {
+   "id": "636dd8aedfbbf127d6cc7c7e07ee3418",
+   "name": "ftp.pixelatumente.es",
+   "type": "CNAME",
+   "content": "pixelatumente.es",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {
+    "flatten_cname": false
+   },
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-04-29T14:02:52.126422Z",
+   "modified_on": "2026-04-29T14:02:52.126422Z"
+  },
+  {
+   "id": "aaa7cb5777bb87186766295918558444",
+   "name": "pixelatumente.es",
+   "type": "CNAME",
+   "content": "pixelatumente.pages.dev",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {
+    "flatten_cname": false
+   },
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-09-06T15:57:03.28806Z",
+   "modified_on": "2026-09-06T15:57:03.28806Z"
+  },
+  {
+   "id": "6f7d84318f525359b98d6685bc8497f1",
+   "name": "pop.pixelatumente.es",
+   "type": "CNAME",
+   "content": "mail.nominalia.com",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {
+    "flatten_cname": false
+   },
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-04-29T14:02:52.148082Z",
+   "modified_on": "2026-04-29T14:02:52.148082Z"
+  },
+  {
+   "id": "b75140a8b095cba124a1376374a5edaa",
+   "name": "www.pixelatumente.es",
+   "type": "CNAME",
+   "content": "pixelatumente.pages.dev",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {
+    "flatten_cname": false
+   },
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-09-06T15:57:03.659686Z",
+   "modified_on": "2026-09-06T15:57:03.659686Z"
+  },
+  {
+   "id": "f0d635686f3f6036a81fc9ac3bfb3dd1",
+   "name": "pixelatumente.es",
+   "type": "MX",
+   "content": "mail.nominalia.com",
+   "priority": 10,
+   "proxiable": false,
+   "proxied": false,
+   "ttl": 1,
+   "settings": {},
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-04-29T14:02:52.089207Z",
+   "modified_on": "2026-04-29T14:02:52.089207Z"
+  },
+  {
+   "id": "fab46e8068d73a31392c56825c679b45",
+   "name": "_autodiscover._tcp.pixelatumente.es",
+   "type": "SRV",
+   "content": "10 443 ms-es.securemail.pro",
+   "priority": 10,
+   "proxiable": false,
+   "proxied": false,
+   "ttl": 1,
+   "data": {
+    "port": 443,
+    "priority": 10,
+    "target": "ms-es.securemail.pro",
+    "weight": 10
+   },
+   "settings": {},
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-04-29T14:02:52.159868Z",
+   "modified_on": "2026-04-29T14:02:52.159868Z"
+  },
+  {
+   "id": "eb4d9c8b15296405dece0c0a35119be9",
+   "name": "pixelatumente.es",
+   "type": "TXT",
+   "content": "\"google-site-verification=K2fJ7v6MtcufxAh40VCflri-vO9kqofc1XVnoaV-d9o\"",
+   "proxiable": false,
+   "proxied": false,
+   "ttl": 3600,
+   "settings": {},
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-05-05T16:10:39.909575Z",
+   "modified_on": "2026-05-05T16:10:39.909575Z"
+  },
+  {
+   "id": "36c1c24b8c9b8c9b301697b068487b90",
+   "name": "pixelatumente.es",
+   "type": "TXT",
+   "content": "\"v=spf1 include:spf.webapps.net ~all\"",
+   "proxiable": false,
+   "proxied": false,
+   "ttl": 1,
+   "settings": {},
+   "meta": {},
+   "comment": null,
+   "tags": [],
+   "created_on": "2026-04-29T14:02:52.119661Z",
+   "modified_on": "2026-04-29T14:02:52.119661Z"
+  }
+ ]
+}
